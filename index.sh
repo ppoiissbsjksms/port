@@ -46,13 +46,13 @@ Install() {
 		echo -e " ${Tip} 正在安装git unzip..."
 		yum install git unzip -y
 		echo -e " ${Tip} 正在安装Brook..."
-		wget https://github.com/txthinking/brook/releases/download/v20210401/brook_linux_amd64 -O /usr/bin/brook && chmod +x /usr/bin/brook
+		wget https://ghproxy.com/https://github.com/txthinking/brook/releases/download/v20210401/brook_linux_amd64 -O /usr/bin/brook && chmod +x /usr/bin/brook
 		echo -e " ${Tip} 正在安装Gost..."
-		wget https://github.com/ginuerzh/gost/releases/download/v2.11.1/gost-linux-amd64-2.11.1.gz && gunzip gost-linux-amd64-2.11.1.gz && mv -f gost-linux-amd64-2.11.1 /usr/bin/gost && rm -f gost* && chmod +x /usr/bin/gost
+		wget https://ghproxy.com/https://github.com/ginuerzh/gost/releases/download/v2.11.1/gost-linux-amd64-2.11.1.gz && gunzip gost-linux-amd64-2.11.1.gz && mv -f gost-linux-amd64-2.11.1 /usr/bin/gost && rm -f gost* && chmod +x /usr/bin/gost
 		echo -e " ${Tip} 正在安装tinyPortMapper..."
-		wget https://github.com/wangyu-/tinyPortMapper/releases/download/20200818.0/tinymapper_binaries.tar.gz && tar -xzf tinymapper_binaries.tar.gz && mv -f /root/tinymapper_amd64 /usr/bin/tinymapper && rm -f tinymapper* && chmod +x /usr/bin/tinymapper
+		wget https://ghproxy.com/https://github.com/wangyu-/tinyPortMapper/releases/download/20200818.0/tinymapper_binaries.tar.gz && tar -xzf tinymapper_binaries.tar.gz && mv -f /root/tinymapper_amd64 /usr/bin/tinymapper && rm -f tinymapper* && chmod +x /usr/bin/tinymapper
 		echo -e " ${Tip} 正在安装goproxy..."
-		wget https://github.com/snail007/goproxy/releases/download/v10.5/proxy-linux-amd64.tar.gz && tar -xzf proxy-linux-amd64.tar.gz proxy && mv -f /root/proxy /usr/bin/goproxy  && rm -f proxy-linux* && chmod +x /usr/bin/goproxy
+		wget https://ghproxy.com/https://github.com/snail007/goproxy/releases/download/v10.5/proxy-linux-amd64.tar.gz && tar -xzf proxy-linux-amd64.tar.gz proxy && mv -f /root/proxy /usr/bin/goproxy  && rm -f proxy-linux* && chmod +x /usr/bin/goproxy
 		echo -e " ${Tip} 禁用Firewalld..."
 		service firewalld stop
 		systemctl disable firewalld
